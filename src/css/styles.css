@@ -471,3 +471,61 @@ nav img{
     color: #3290cf;
 }
 
+/* VUELOS */
+
+.container_search{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 50px;
+    padding: 20px;
+}
+
+.select_vuelos, .dates{
+    font-size: 16px;
+    height: 40px;
+    width: 250px;
+}
+
+.dates{
+    margin-bottom: 17px;
+}
+
+.item_search{
+    font-size: 16px;
+    text-align: center;
+    margin: 5px;
+    height: auto;
+}
+
+.boton_buscar{
+    font-size: 16px;
+    height: 40px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #3c6e71;
+    border: none;
+    color: #d9d9d9;
+    transition: all 0.5s;
+}
+
+.boton_buscar:hover{
+    background-color: #284b63;
+}
+
+.btn_search{
+    grid-area: 2 / 2 / span 1 / span 3 ;
+}
+
+.title_search{
+    text-align: center;
+    margin: 10px;
+}
+
+.container_busq{
+    display: grid;
+    justify-content: center;
+}

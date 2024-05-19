@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./src/css/styles.css">
     <link rel="stylesheet" href="./src/css/Normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header class="header ">
@@ -17,7 +18,7 @@
                 <img src="./src/img/Logo(Color).svg" alt="">
             </div>
             <div class="navegacion">
-                <a href="">Nosotros</a>
+                <a href="index.html">Nosotros</a>
                 <a href="viajes.html">Viajes</a>
                 <a href="">Testimoniales</a>
                 <a href="">Contactanos</a>
@@ -35,14 +36,6 @@
                 </div>
             </div>
         </nav>
-        <div class="hero container">
-            <div class="info">
-                <h1 class="copy">Explora el mundo, vuela hacia tus sueños</h1>
-                <p class="descripcion-copy">Tu viaje comienza aquí. ¡Descubre, vuela, disfruta</p>
-                <a href="" class="btn btn-access">Ver viajes </a>
-            </div>
-
-        </div>
     </header>
 
    <main class="main container">
@@ -56,19 +49,56 @@
                 <img src="./src/img/logo-latam-airlines.png" alt="" class="image-colaborador">
             </div>
         </section>
-        
    </main>
-   <section class="sobre-nosotros">
-        <div class="container">
-            <h3>Sobre nosotros</h3>
-            <div class="nosotros">
-                <img class="nosotros-img" src="./src/img/francia.jpg" alt="">
-                <p>En nuestra agencia de viajes, nos dedicamos a transformar tus sueños en experiencias tangibles y memorables. Con una pasión innata por explorar el mundo y un compromiso firme con la excelencia en el servicio, hemos dedicado años a perfeccionar cada aspecto de la planificación de viajes. Nuestro equipo está compuesto por expertos en destinos de todo el mundo, listos para brindarte asesoramiento personalizado y soluciones adaptadas a tus necesidades específicas. <a href=""> Leer más</a> </p>
+
+   <section class="container_busq">
+       <label><h4 class="title_search">Busca tu vuelo</h4></label>
+       <div class="container_search">
+            <div class="item_search">
+                <select name="Salida" id="tipo" class="select_vuelos">
+                    <option value="Salida">Salida</option>
+                    <option value="BSAS">Buenos Aires</option>
+                    <option value="LPA">La Plata</option>
+                    <option value="MDQ">Mar del Plata</option>
+                    <option value="QUI">Quito</option>
+                </select>
             </div>
-
+            <div class="item_search">
+                <div>
+                    <label>Fecha de Salida</label>
+                </div>
+                <input type="date" class="dates">   
+            </div>
+            <div class="item_search">
+                <select name="Llegada" class="select_vuelos">
+                    <option value="Llegada">Llegada</option>
+                    <option value="BRA">Brasil</option>
+                    <option value="PAR">Paris</option>
+                    <option value="MDQ">Italia</option>
+                    <option value="QUI">Republica Dominicana</option>
+                </select>
+            </div>
+            <div class="item_search dates">
+                <div>
+                    <label>Fecha de llegada</label>
+                </div>
+                <input type="date" class="dates">
+            </div>
+            <div class="item_search">
+                <select name="Clase" class="select_vuelos">
+                    <option value="CLASE">Seleccione una clase</option>
+                    <option value="ECO">Economy</option>
+                    <option value="PECO">Premium Economy</option>
+                    <option value="BUS">Business</option>
+                    <option value="FCL">First Class</option>
+                </select>
+            </div>
+            <div class="item_search btn_search">
+                <button class="boton_buscar">BUSCAR</button>
+            </div>
         </div>
-
    </section>
+
    <section class="disponibles">
         <div class="container">
             <h3>Viajes más populares</h3>
@@ -77,16 +107,15 @@
                     <img src="./src/img/destino-1.jpg" alt="">
                     <div class="info-tour">
                         <div class="card-titulo">
-                            <h4>Torre Eiffel</h4>
+                            <h4>Triangulo del Amor</h4>
                             <div class="valoracion">
                                 <p>5.0</p>
                                 <img src="./src/img/icons/star_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="">
-                                
                             </div>
                         </div>
                         <div class="ubicacion">
                             <img src="./src/img/icons/location_on_24dp_FILL0_wght400_GRAD0_opsz24 (1).png" alt="">
-                            <p>Paris, Francia</p>
+                            <p>Turin, Italia</p>
                         </div>
                         <div class="salida">
                             <img src="./src/img/icons/calendar_month_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="">
@@ -94,7 +123,7 @@
                         </div>
                         <div class="cupos">
                             <img src="./src/img/icons/flights_and_hotels_24dp_FILL0_wght400_GRAD0_opsz24.png    " alt="">
-                            <p>Disponible: <span>54</span> </p>
+                            <p>Disponible</p>
                         </div>
                         <div class="precio">
                             <p><span>$</span> 5000</p>
@@ -105,7 +134,7 @@
                     <img src="./src/img/brasil 1.jpg" alt="">
                     <div class="info-tour">
                         <div class="card-titulo">
-                            <h4>Torre Eiffel</h4>
+                            <h4>Cristo Redentor</h4>
                             <div class="valoracion">
                                 <p>5.0</p>
                                 <img src="./src/img/icons/star_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="">
@@ -114,7 +143,7 @@
                         </div>
                         <div class="ubicacion">
                             <img src="./src/img/icons/location_on_24dp_FILL0_wght400_GRAD0_opsz24 (1).png" alt="">
-                            <p>Paris, Francia</p>
+                            <p>Rio de Janeiro, Brasil</p>
                         </div>
                         <div class="salida">
                             <img src="./src/img/icons/calendar_month_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="">
@@ -122,10 +151,10 @@
                         </div>
                         <div class="cupos">
                             <img src="./src/img/icons/flights_and_hotels_24dp_FILL0_wght400_GRAD0_opsz24.png    " alt="">
-                            <p>Disponible: <span>54</span> </p>
+                            <p>Disponible</p>
                         </div>
                         <div class="precio">
-                            <p><span>$</span> 5000</p>
+                            <p><span>$</span> 15000</p>
                         </div>
                     </div>
                 </div>
@@ -133,7 +162,7 @@
                     <img src="./src/img/bariloche 1.png" alt="">
                     <div class="info-tour">
                         <div class="card-titulo">
-                            <h4>Torre Eiffel</h4>
+                            <h4>Nahuel Huapi</h4>
                             <div class="valoracion">
                                 <p>5.0</p>
                                 <img src="./src/img/icons/star_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="">
@@ -142,7 +171,7 @@
                         </div>
                         <div class="ubicacion">
                             <img src="./src/img/icons/location_on_24dp_FILL0_wght400_GRAD0_opsz24 (1).png" alt="">
-                            <p>Paris, Francia</p>
+                            <p>Bariloche, Argentina</p>
                         </div>
                         <div class="salida">
                             <img src="./src/img/icons/calendar_month_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="">
@@ -150,10 +179,10 @@
                         </div>
                         <div class="cupos">
                             <img src="./src/img/icons/flights_and_hotels_24dp_FILL0_wght400_GRAD0_opsz24.png    " alt="">
-                            <p>Disponible: <span>54</span> </p>
+                            <p>Disponible</p>
                         </div>
                         <div class="precio">
-                            <p><span>$</span> 5000</p>
+                            <p><span>$</span> 2000</p>
                         </div>
                     </div>
                 </div>
@@ -161,16 +190,15 @@
                     <img src="./src/img/dominicana 1.jpg    " alt="">
                     <div class="info-tour">
                         <div class="card-titulo">
-                            <h4>Torre Eiffel</h4>
+                            <h4>Republica Dominicana</h4>
                             <div class="valoracion">
                                 <p>5.0</p>
                                 <img src="./src/img/icons/star_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="">
-                                
                             </div>
                         </div>
                         <div class="ubicacion">
                             <img src="./src/img/icons/location_on_24dp_FILL0_wght400_GRAD0_opsz24 (1).png" alt="">
-                            <p>Paris, Francia</p>
+                            <p>Santo Domingo, Republica Dominicana</p>
                         </div>
                         <div class="salida">
                             <img src="./src/img/icons/calendar_month_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="">
@@ -178,10 +206,10 @@
                         </div>
                         <div class="cupos">
                             <img src="./src/img/icons/flights_and_hotels_24dp_FILL0_wght400_GRAD0_opsz24.png    " alt="">
-                            <p>Disponible: <span>54</span> </p>
+                            <p>Disponible</p>
                         </div>
                         <div class="precio">
-                            <p><span>$</span> 5000</p>
+                            <p><span>$</span> 25000</p>
                         </div>
                     </div>
                 </div>
